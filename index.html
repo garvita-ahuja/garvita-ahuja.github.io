@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Garvita's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/763f69e4c3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div id="container">
+                <nav>    
+                    <h3><b>GARVITA</b></h3>                
+                    <ul id="sidemenu">
+                        <li><a href="#header"> Home</a></li>
+                        <li><a href="#about"> About</a></li>
+                        <li><a href="#services"> Services</a></li>
+                        <li><a href="#portfolio"> Projects</a></li>
+                        <li><a href="#contact"> Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p class="tagline">Welcome to my Portfolio</p>
+                    <h1>Hi, I'm Garvita Ahuja<br><span id="typing-text"></span></h1>
+                </div>
+            </div>
+        </div>
+        <!-----about----->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/boi4.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Enthusiastic tech professional with a strong foundation in Python, SQL, Flutter, Firebase, HTML, CSS, and Django, complemented by a substantial background in research in data science, machine learning, and natural language processing.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('research')">Research</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Scientist & Machine Learning Engineer</span><br>Python and SQL</li>
+                            <li><span>Web Developer</span><br>HTML, CSS, Javascript and Django</li>
+                            <li><span>App Developer</span><br>Using Flutter and Firebase</li>
+              
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="research">
+                        <ul>
+                            <li><span>"Assisted Living Robots: Discussion and Design of a Robot for Elder Care</span><br>Published in "Internet of Things (IoT): Key Digital Trends Shaping the Future" (pp 11–26) on SpringerLink.</li>
+                            <li><span>"Prostate Cancer Survival Analysis and Treatment Recommendation Using Machine Learning</span><br> Submitted to the International Conference on Machine Learning and Data Engineering (ICMLDE 2023)</li>
+                            <li><span>Advancements in Hate Speech Detection: A Comprehensive Analysis of NLP Models and Techniques</span><br>Submitted to the 7th International Conference On Innovative Computing and Communication (ICICC 2024).</li>
+                            <li><span>Prostate Cancer Prognosis with Machine Learning: A Critical Review of Survival Analysis Methods</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Vivekananda Institute of Professional Studies</span><br>B.Tech in Artificial Intelligence and Machine Learning <br>2021-2025</li>
+                            <li><span>Rosary Sr Sec School, Delhi</span></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------sevices------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-database"></i>                        <h2>Data Scientist</h2>
+                        <!-- <p>Boi</p> -->
+                        <a href="#"> Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>                        <h2>Web Dev</h2>
+                        <!-- <p>Boi</p> -->
+                        <a href="#"> Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Dev</h2>
+                        <!-- <p>Boi</p> -->
+                        <a href="#"> Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- -------portfolio------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/heart.png">
+                        <div class="layer">
+                            <h3> Heart Disease Detection using Machine Learning</h3>
+                            <p>Utilizing Python, this project employs machine learning models to predict heart disease.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/llm.png">
+                        <div class="layer">
+                            <h3> Large Language Model on Ramcharitramanas</h3>
+                            <p>Python-based Natural Language Processing (NLP) analysis of Ramcharitramanas text</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/driver.jpeg">
+                        <div class="layer">
+                            <h3> Driver Drowisiness Detection using Machine Learning</h3>
+                            <p>Python-based system for detecting driver drowsiness.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/icon2.jpg">
+                        <div class="layer">
+                            <h3> Notes App</h3>
+                            <p> Flutter and Firebase-powered mobile app for managing notes and tasks.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/ecom.jpg">
+                        <div class="layer">
+                            <h3>Ecommerce Website </h3>
+                            <p>HTML, CSS, and Django-based e-commerce platform for online shopping</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/web-developer-portfolio.png">
+                        <div class="layer">
+                            <h3>This very site</h3>
+                            <p>Personal portfolio website showcasing my skills and projects using HTML, CSS, and JavaScript.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------contact-------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>garvitaahuja1293@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/garvita-ahuja-93a151247/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/garvita_ahuja/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                        </div>
+                    </div>
+                    <a href="images/garvita_cv.pdf" download class="btn2">Download CV</a>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            var tablinks = document.getElementsByClassName('tab-links');
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (var i = 0; i < tablinks.length; i++) {
+                    tablinks[i].classList.remove("active-link");
+                }
+                for (var i = 0; i < tabcontents.length; i++) {
+                    tabcontents[i].classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add('active-link');
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+            
+        </script>
+
+        <script>
+            var sidemenu= document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzlaP2HJhvMx0QWm2h6TABiCgHCBDVi_5BZOZvVd_KLPLQSftXsk0YKTpiCVy4uD4ty5Q/exec'
+            const form = document.forms['submit-to-google-sheet']
+          const msg= document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {msg.innerHTML= "Message sent successfully." 
+            setTimeout(function(){msg.innerHTML=""})}, 5000)
+            form.reset()
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+          <script>
+            const typingTextElement = document.getElementById("typing-text");
+            const typingTexts = ["Data Scientist", "Machine Learning Engineer", "App Developer", "Web Developer"];
+            let currentIndex = 0;
+            let currentText = "";
+            let isTyping = true;
+
+            function startTyping() {
+                if (isTyping) {
+                currentText = typingTexts[currentIndex];
+                typingTextElement.textContent = currentText.slice(0, typingTextElement.textContent.length + 1);
+
+                if (typingTextElement.textContent === currentText) {
+                     isTyping = false;
+                    setTimeout(() => {
+                    isTyping = true;
+                    typingTextElement.textContent = "";
+                    currentIndex = (currentIndex + 1) % typingTexts.length;
+                    }, 2000); // Pause for 2 seconds before starting next text
+                }
+            }
+
+            setTimeout(startTyping, 100); // Typing speed (adjust as needed)
+            }
+
+            // Start the typing animation when the page loads
+            window.onload = startTyping;
+
+          </script>
+    </body>
+</html>
